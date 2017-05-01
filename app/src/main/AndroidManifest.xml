@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         >
         <!--android:theme="@style/Theme.AppCompat.Light"-->
-        <activity android:name=".SlidingDrawerActivity2">
+        <activity android:name=".ViewFeatureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
