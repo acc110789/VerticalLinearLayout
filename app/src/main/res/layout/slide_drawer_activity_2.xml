@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/click_to_reset"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="reset"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/click_to_show_animation"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="show"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/click_to_close_animation"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="close"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <include
+            android:id="@+id/layout_id_1"
+            layout="@layout/single_text_view"/>
+
+    </LinearLayout>
+
+    <com.example.zhangxiaolong.exploreandroid2.sliding.MySlidingView
+        android:id="@+id/sliding_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.example.zhangxiaolong.exploreandroid2.sliding.AdaptiveZoomView
+            android:id="@+id/clickable_view"
+            android:layout_width="380dp"
+            android:layout_height="102dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:background="@android:color/holo_green_light" />
+
+
+    </com.example.zhangxiaolong.exploreandroid2.sliding.MySlidingView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.zhangxiaolong.exploreandroid2.MLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slide_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/slide_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_red_light" />
+
+</com.example.zhangxiaolong.exploreandroid2.MLinearLayout>

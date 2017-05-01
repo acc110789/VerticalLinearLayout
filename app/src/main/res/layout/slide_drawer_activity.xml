@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.example.zhangxiaolong.exploreandroid2.MultiDirectionSlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/content"
+        my:direction="topToBottom"
+        my:handle="@+id/handle" >
+
+        <include
+            android:id="@id/content"
+            layout="@layout/pen_content" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:src="@drawable/sliding_drawer_handle_bottom" />
+    </com.example.zhangxiaolong.exploreandroid2.MultiDirectionSlidingDrawer>
+
+    <TextView
+        android:id="@+id/button_open"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:padding="30dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_red_light"
+        android:background="@android:color/black"
+        android:text="@string/open"
+        android:visibility="visible"
+        android:layout_gravity="left|center_vertical"/>
+
+</FrameLayout>
